@@ -39,6 +39,13 @@ section {
     border-bottom: 1px solid #274156;
 }
 
+.sobre-mim {
+    max-width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+
+}
+
 footer {
     background-color: #112D4E;
     padding: 10px 0;
@@ -65,5 +72,22 @@ p {
 .list-group-item-custom i {
     color: black; 
 }
+
+
+.contact-form {
+    max-width: 500px; 
+    margin: 20px auto; 
+}
+
+.contact-form button {
+    background-color: #DB7093; 
+    color: white;
+    border: none; 
+}
+
+.contact-form button:hover {
+    background-color: #FFC0CB; 
+}
+
 
 

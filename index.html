@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+
     <!-- Cabeçalho -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -30,10 +31,12 @@
     </header>
 
     <!-- Sobre Mim -->
-    <section id="sobre-mim" class="container mt-5 pt-4">
+    <section id="sobre-mim" class="container mt-5 pt-4 sobre-mim">
         <h2>Sobre Mim</h2>
-        <p class="lead">Me chamo Gabriela, sou estudante do LAB365 do curso de FullStack do Senai, buscando experiência pra criar soluções digitais inovadoras. Apaixonada por tecnologia e sempre em busca de novos desafios e aprendizados.</p>
-        <p>Formada em Engenharia Civil pela Universidade Federal de Uberlândia-MG, tenho um forte background técnico aliado a uma sólida experiência em liderança de equipes em projetos de engenharia onde atuo no desenvolvimento de projetos de estrutura. Minhas especialidades estão sendo desenvolvidas no front-end e back-end, com um interesse em empreender na área.</p>
+        <p class="lead">Me chamo Gabriela, sou estudante do LAB365 do curso de FullStack do Senai, buscando experiência pra criar soluções digitais inovadoras.</p>
+        <p>Apaixonada por tecnologia e sempre em busca de novos desafios e aprendizados.</p>
+        <p>Formada em Engenharia Civil pela Universidade Federal de Uberlândia-MG, tenho um forte background técnico aliado a uma sólida experiência em liderança de equipes em projetos de engenharia onde atuo no desenvolvimento de projetos de estrutura.</p>
+        <p>Minhas especialidades estão sendo desenvolvidas no front-end e back-end, com um interesse em empreender na área.</p>
         <p>Fora do trabalho, gosto de passar meu tempo explorando novas tecnologias.</p>
     </section>
 
@@ -107,24 +110,21 @@
         </ul>
 </section>
 
-
-
-
     <!-- Contato -->
     <section id="contato" class="container mt-4">
         <h2>Contato</h2>
-        <form>
+        <form class="contact-form" action="mailto:gabialmeidadev@gmail.com" method="POST" enctype="text/plain">
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
             </div>
             <div class="mb-3">
                 <label for="mensagem" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                <textarea class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
