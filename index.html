@@ -9,45 +9,89 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header class="bg-white text-#112D4E p-4">
-        <h1>Gabriela</h1>
-        <nav>
-            <ul class="nav">
-                <li class="nav-item"><a href="#sobre-mim" class="nav-link text-#112D4E">Sobre Mim</a></li>
-                <li class="nav-item"><a href="#projetos" class="nav-link text-#112D4E">Projetos</a></li>
-                <li class="nav-item"><a href="#habilidades" class="nav-link text-#112D4E">Habilidades</a></li>
-                <li class="nav-item"><a href="#contato" class="nav-link text-#112D4E">Contato</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Gabriela</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sobre-mim">Sobre Mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Sobre Mim -->
-    <section id="sobre-mim" class="p-4">
+    <section id="sobre-mim" class="container mt-4">
         <h2>Sobre Mim</h2>
         <p>Descrição breve sobre Gabriela, suas motivações e trajetória profissional.</p>
     </section>
 
     <!-- Projetos -->
-    <section id="projetos" class="p-4">
+    <section id="projetos" class="container mt-4">
         <h2>Projetos</h2>
-        <p>Uma galeria ou lista de projetos significativos nos quais Gabriela trabalhou. Pode incluir imagens, links e descrições breves.</p>
+        <div class="row">
+            <!-- Exemplo de Card -->
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Projeto">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">Breve descrição do projeto.</p>
+                        <a href="#" class="btn btn-primary">Veja mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Habilidades -->
-    <section id="habilidades" class="p-4">
+    <section id="habilidades" class="container mt-4">
         <h2>Habilidades</h2>
         <p>Uma lista de habilidades técnicas e soft skills de Gabriela.</p>
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="p-4">
+    <section id="contato" class="container mt-4">
         <h2>Contato</h2>
-        <p>Informações de como entrar em contato com Gabriela, incluindo formulário de contato, e-mail e redes sociais.</p>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
     </section>
 
     <!-- Rodapé -->
-    <footer class="bg-dark text-white p-4 text-center">
+    <footer class="bg-dark text-white text-center p-3 mt-4">
         <p>Direitos autorais © Gabriela 2024</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
