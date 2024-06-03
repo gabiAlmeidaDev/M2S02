@@ -54,4 +54,16 @@ p {
     margin-bottom: 20px;
 }
 
+.list-group-item-custom {
+    background-color: #FFD1DC; 
+    color: black; 
+    max-width: 500px; 
+    display: flex;
+    align-items: center;
+}
+
+.list-group-item-custom i {
+    color: black; 
+}
+
 
